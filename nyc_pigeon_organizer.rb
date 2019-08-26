@@ -3,8 +3,10 @@ def nyc_pigeon_organizer(data)
   data.each do | key, value|
     value.each do | attributes, names |
       names.each do | name |
-      if !hash(name)
-        hash.new(name)
+      if !hash[name]
+        hash[name] = { }
+      if !hash[key]
+        hash[key] = { }
 end
 
 
