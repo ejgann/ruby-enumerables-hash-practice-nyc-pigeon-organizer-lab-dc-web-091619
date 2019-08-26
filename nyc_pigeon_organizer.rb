@@ -10,6 +10,10 @@ def nyc_pigeon_organizer(data)
 
         hash[name][key] = attributes.to_s
 end
+end
+end
+return hash
+end
 
 
 
