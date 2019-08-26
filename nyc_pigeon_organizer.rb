@@ -7,6 +7,8 @@ def nyc_pigeon_organizer(data)
         hash[name] = { }
       if !hash[name][key]
         hash[name][key] = [ ]
+
+        hash[name][key] = attributes.to_s
 end
 
 
@@ -16,8 +18,8 @@ end
 # Iterate over (data) first by key/value parameters
 # Iterate over "value" parameter (named them "attributes, names")
 # Iterate over "names" parameter (named the singular "name")
-# Need to establish that, if there is currently no "name" hash, we need to create a new one.
-# Similarly, if there is no key/array pair within the hash, we need to create one.
+# Need to establish that, if there is currently no name hash, we need to create a new one.
+# Similarly, if there is no key array within the hash, we need to create one.
 # We build out and specify the contents of the new hash by specifying that names of each pigeon are now going to be the new keys
 # Each pigeons' specific "attributes" will be converted to a string and added to comprise each pigeon's individual hash.
 # Return the new hash
