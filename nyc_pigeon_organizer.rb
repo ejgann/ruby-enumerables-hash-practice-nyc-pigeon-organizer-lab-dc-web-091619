@@ -5,8 +5,8 @@ def nyc_pigeon_organizer(data)
       names.each do | name |
       if !hash[name]
         hash[name] = { }
-      if !hash[key]
-        hash[key] = { }
+      if !hash[name][key]
+        hash[name][key] = [ ]
 end
 
 
