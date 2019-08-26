@@ -5,10 +5,12 @@ def nyc_pigeon_organizer(data)
       names.each do | name |
       if !hash[name]
         hash[name] = { }
+      end
       if !hash[name][key]
         hash[name][key] = [ ]
-end
+      end
         hash[name][key] << attributes.to_s
+end
 end
 end
 return hash
